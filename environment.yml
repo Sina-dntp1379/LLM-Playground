@@ -1,8 +1,16 @@
-name:  # Environment name
+name: llm_playground
 
-dependencies:  # Packages should be installed through conda if possible
-  - python=  # Python version
-  - pre-commit
-  - ruff
+channels:
+  - conda-forge
 
-  - pip:  # Install additional packages through pip if they're not available in the default conda channel
+dependencies:
+  - python=3.12
+  - pip
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - tqdm
+  - requests

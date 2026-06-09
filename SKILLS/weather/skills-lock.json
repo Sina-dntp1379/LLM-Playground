@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "weather": {
+      "source": "steipete/clawdis",
+      "sourceType": "github",
+      "skillPath": "skills/weather/SKILL.md",
+      "computedHash": "eb777bfdab720ad8c237deb547b49d61015686a076d171a73353c22ef2d9d020"
+    }
+  }
+}

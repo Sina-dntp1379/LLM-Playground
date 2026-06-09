@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Collector</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+        label { display: block; margin-top: 12px; font-weight: 600; }
+        input { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+        button { margin-top: 18px; padding: 10px 24px; background: #007bff; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 24px; padding: 16px; border-radius: 8px; }
+        .result.success { background: #d4edda; border: 1px solid #c3e6cb; }
+        .result.error { background: #f8d7da; border: 1px solid #f5c6cb; }
+        .temp { font-size: 32px; font-weight: bold; }
+        .meta { margin-top: 8px; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Weather Collector</h1>
+    <form method="POST">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="e.g. Ames" required>
+
+        <label for="state">State / Region</label>
+        <input type="text" id="state" name="state" placeholder="e.g. Iowa" required>
+
+        <label for="datetime">Date & Time</label>
+        <input type="text" id="datetime" name="datetime" placeholder="e.g. 2/20/2017  9:07:00 PM">
+
+        <button type="submit">Get Temperature</button>
+    </form>
+
+    {% if result %}
+    <div class="result {{ 'success' if result.temp_f else 'error' }}">
+        {% if result.error %}
+            <strong>Error:</strong> {{ result.error }}
+        {% else %}
+            <div><strong>{{ result.query }}</strong></div>
+            <div class="temp">{{ result.temp_f }}°F / {{ result.temp_c }}°C</div>
+            <div>{{ result.condition }}</div>
+            <div class="meta">
+                Humidity: {{ result.humidity }}% | Wind: {{ result.wind }} mph
+                {% if result.datetime %}| Recorded: {{ result.datetime }}{% endif %}
+            </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
