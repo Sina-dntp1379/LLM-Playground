@@ -1,3 +1,6 @@
+<img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/6ce4ff5d-0a34-40c9-b13d-963363ec36aa" />
+
+
 # LLM Playground
 
 This is a personal repository for playing with Large Language Models (LLMs), testing ideas, and exploring new applications in this rapidly evolving field.
