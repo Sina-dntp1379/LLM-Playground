@@ -1,26 +1,30 @@
-# DDOM Lab repository template
-Template repo for DDOM Lab repositories.
+LLM Playground
 
-Use this template to create new repositories for DDOM Lab projects. Doing this will ensure that the repository is properly configured with the necessary files and settings.
+This is a personal repository for playing with Large Language Models (LLMs), testing ideas, and exploring new applications in this rapidly evolving field.
 
-Once you've created your repo from the template, you should do the following on the local machine:
-1. Clone the repository to your local machine.
-2. Edit `environment.yml` to add the environment name, Python version, and any necessary packages.
-3. Create a new conda environment using the `environment.yml` file: `conda env create -f environment.yml`.
-4. Activate the new environment: `conda activate <environment_name>`.
-5. Install `pre-commit` hooks: `pre-commit install`.
+The world is changing quickly, and AI is advancing at an incredible pace. This repository serves as a space for experimentation, learning, and staying up to date with new developments. Some projects may be simple prototypes, while others may evolve into more complete applications.
 
-## `.gitignore`
-The `.gitignore` file is configured to ignore common files and directories that should not be committed to the repository. The file is based on the `Python.gitignore` template provided by GitHub. Ignore statements for IDE files and directories are also included, as well as the `.DS_Store` file that macOS creates.
+Goals
+Explore and experiment with LLMs
+Test new AI tools, frameworks, and workflows
+Build small proof-of-concept applications
+Learn about emerging AI capabilities and limitations
+Document interesting findings and ideas
+Contents
 
-## `.pre-commit-config.yaml`
-Pre-commits are run automatically on the local machine when a commit is made. They ensure that code is properly formatted and that there are no errors. We use `ruff` for linting and code formatting.
+This repository may include:
 
-## `environment.yml`
-The `environment.yml` file is used to create a new conda environment with the necessary packages for the project. The file should be edited to include the environment name, Python version, and any necessary packages.
+LLM experiments and prototypes
+Prompt engineering examples
+Retrieval-Augmented Generation (RAG) projects
+Agent-based workflows
+AI automation tools
+Model evaluation and benchmarking
+Miscellaneous AI-related projects
+Disclaimer
 
-## `LICENSE`
-By default, our code is provided under the MIT License, but can be modified if necessary.
+This repository is primarily for learning, experimentation, and curiosity-driven development. Code quality, structure, and documentation may vary between projects as ideas are explored and tested.
 
-## `README.md`
-This file provides a brief overview of the repository and should be updated to include information about the project, installation instructions, usage, etc.
+Why?
+
+AI is moving incredibly fast. New models, tools, and capabilities emerge almost every week. Keeping up can feel overwhelming, but it is also an exciting time to learn, build, and explore what these technologies can do.
